@@ -29,5 +29,5 @@ public class DecryptFormController {
 
         txtOriginalText.setText(MainCombine.decrypt(cipherText, key));
     }
-    }
+
 }
