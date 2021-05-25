@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.assign.Controller.MainFormController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="127.0" layoutY="65.0" text="Cryptography Demo">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Label>
+        <Button layoutX="99.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnEncrypt_OnAction" prefHeight="67.0" prefWidth="126.0" text="Encrypt" AnchorPane.leftAnchor="99.0" />
+        <Button layoutX="380.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnDecrypt_OnAction" prefHeight="67.0" prefWidth="126.0" text="Decrypt" AnchorPane.rightAnchor="94.0" />
+    </children>
+
+</AnchorPane>
