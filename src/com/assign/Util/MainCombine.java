@@ -25,6 +25,22 @@ public class MainCombine {
     }
 
     public static String decrypt(String cipherText, String key) {
-        return cipherText;
+        String cip1 = null;
+        String cip2 = null;
+        String text;
+        char[] str = key.toCharArray();
+        char[] strchipher = cipherText.toCharArray();
+        for (char c1: str
+        ) {
+            c1 -= 10;
+            cip2 += c1;
+        }
+        for (char c: strchipher
+        ) {
+            c -= 5;
+            cip1 += c;
+        }
+        text = cip2+cip1;
+        return text;
     }
 }
