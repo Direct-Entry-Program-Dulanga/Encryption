@@ -6,9 +6,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Font?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.assign.Controller.DecryptFormController"
             prefHeight="400.0" prefWidth="600.0">
-
+    <children>
+        <Label layoutX="212.0" layoutY="37.0" prefHeight="31.0" prefWidth="177.0" text="Decryption">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCipherText" layoutX="101.0" layoutY="91.0" prefHeight="38.0" prefWidth="400.0" promptText="Enter your cipher text" />
+        <TextField fx:id="txtKey" layoutX="101.0" layoutY="151.0" prefHeight="38.0" prefWidth="400.0" promptText="Enter your key" />
+        <Button defaultButton="true" layoutX="226.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnDecrypt_OnAction" prefHeight="53.0" prefWidth="150.0" text="Decrypt" />
+        <TextField fx:id="txtOriginalText" alignment="CENTER" editable="false" layoutX="100.0" layoutY="287.0" prefHeight="38.0" prefWidth="400.0" promptText="The original text will be displayed here" />
+    </children>
 </AnchorPane>
