@@ -1,4 +1,15 @@
 package com.assign.Util;
+//
+// -------------For Encryption----------------------
+// 1. combine text and key and it assign to CombineText
+// 2. then create a char array 'strcom' using combineText
+// 3. then add 10 all char value one by one
+// 4. then create a char array 'str' using key
+// 5. then add 10 all char value one by one
+// 6. addition char1 and char2, assign to chiphertext
+// 7. return chipherText
+
+
 
 public class MainCombine {
     public static String encrypt(String text, String key) {
